@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love 💙</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="stars-canvas"></canvas>
+
+  <!-- PAGE 1: PASSCODE -->
+  <div class="page" id="passcode-page">
+    <div class="lock-icon">🔐</div>
+    <div class="card">
+      <h2>Enter the Secret Code</h2>
+      <p>para sa espesyal na tao 💙</p>
+      <div class="dots-display" id="dots"></div>
+      <div class="numpad">
+        <button class="num-btn" onclick="addNum('1')">1</button>
+        <button class="num-btn" onclick="addNum('2')">2</button>
+        <button class="num-btn" onclick="addNum('3')">3</button>
+        <button class="num-btn" onclick="addNum('4')">4</button>
+        <button class="num-btn" onclick="addNum('5')">5</button>
+        <button class="num-btn" onclick="addNum('6')">6</button>
+        <button class="num-btn" onclick="addNum('7')">7</button>
+        <button class="num-btn" onclick="addNum('8')">8</button>
+        <button class="num-btn" onclick="addNum('9')">9</button>
+        <button class="num-btn" onclick="clearNum()">C</button>
+        <button class="num-btn" onclick="addNum('0')">0</button>
+        <button class="num-btn del" onclick="deleteNum()">⌫</button>
+      </div>
+      <div id="error-msg">Wrong code, try again 💙</div>
+    </div>
+  </div>
+
+  <!-- PAGE 2: WELCOME -->
+  <div class="page hidden" id="welcome-page">
+    <div class="welcome-inner">
+      <div class="welcome-emoji">💙</div>
+      <div class="welcome-title">Welcome my love</div>
+      <p class="welcome-msg">
+        I really <span>miss you so much</span> and sorry kagabi at kahapon.<br><br>
+        Ikaw ang pinaka-espesyal na tao sa mundo ko. 🌙
+      </p>
+      <button class="click-btn" onclick="goToHeart()">click baby 💙</button>
+    </div>
+  </div>
+
+  <!-- PAGE 3: HEART -->
+  <div class="page hidden" id="heart-page">
+    <canvas id="heart-canvas"></canvas>
+    <div class="heart-text">
+      <div class="love-you-text">I Love You</div>
+      <div class="subtitle-text">forever and always 💙</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+                            </html>
